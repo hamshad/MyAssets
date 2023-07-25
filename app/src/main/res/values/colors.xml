@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="discount">#FFF5EE</color>
+    <color name="background_dark">#424242</color>
+    <color name="light_black">#555555</color>
+    <color name="background_light">#FEFEFA</color>
+    <color name="blue">#2196F3</color>
+    <color name="clickable_orange">#F44336</color>
+</resources>
