@@ -27,6 +27,19 @@ public class RoundCornerAlertDialogActivity extends AppCompatActivity {
         //4. Call it, modify it and show it
 
 
+        //1. For Animation see the anim resource folder:
+            //alertdialog_enter_anim
+            //alertdialog_exit_anim
+        //2. Then add this in theme.xml file
+             /* <style name="AlertDialogAnimation">
+                     <item name="android:windowEnterAnimation">@anim/alertdialog_enter_anim</item>
+                     <item name="android:windowExitAnimation">@anim/alertdialog_exit_anim</item>
+                </style> */
+        //3. Then integrate
+            // alertDialog.getWindow().getAttributes().windowAnimations = R.style.AlertDialogAnimation;
+
+
+
         AlertDialog.Builder dialog = new AlertDialog.Builder(this, R.style.CustomAlertDialog);
         View login_alertDialog = getLayoutInflater().inflate(R.layout.activity_round_corner_alert_dialog, null);
 
@@ -36,6 +49,7 @@ public class RoundCornerAlertDialogActivity extends AppCompatActivity {
         errorMessage.setText("error"); //if wanted
         dialog.setView(login_alertDialog);
         AlertDialog alertDialog = dialog.create();
+
         ok.setOnClickListener(view -> alertDialog.dismiss());
         alertDialog.show();
     }
